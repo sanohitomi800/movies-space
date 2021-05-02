@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MoviesSpace</title>
+    <title>movies-space</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css"> 
@@ -10,6 +10,20 @@
   </head>
 
   <body>
+       <header>
+      <div class="heading">
+        <h1 class="title">movies-space</h1>
+      </div>
+      <div class="navbar">
+      <div class="nav-lists">
+       <a class="nav_btn" href="/users/sign_up">新規登録</a>
+       <a class="nav_btn" href="/users/sign_in">ログイン</a>
+       <li>ジャンル</li>
+      </ul>
+      </div>
+      </header> 
     <%= yield %>
+    <footer>
+    </footer>
   </body>
 </html>
