@@ -1,0 +1,19 @@
+<%= form_with model: movie, local: true do |f|%>
+  <div class="field">
+    <%= f.label :title, "タイトル" %><br />
+    <%= f.text_field :title, id:"movie_title" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :info, "作品紹介" %><br />
+    <%= f.text_area :info, class: :form__text, id:"movie_catch_copy" %>
+  </div>
+  <div class="field">
+    <%= f.label :image, "映画の画像" %><br />
+    <%= f.file_field :image %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "投稿する", class: :form__btn  %>
+  </div>
+<% end %>

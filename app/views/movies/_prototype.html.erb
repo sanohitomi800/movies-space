@@ -1,0 +1,10 @@
+ <div class="card">
+    <%= link_to image_tag(movie.image, class: :card__img ), movie_path(movie) %>
+    <div class="card__body">
+      <%= link_to movie.title, movie_path(prototype), class: :card__title%>
+      <p class="card__summary">
+        <%= prototype.catch_copy %>
+      </p>
+      <%= link_to "by #{movie.user.name}", user_path(movie.user), class: :card__user %>
+    </div>
+  </div>

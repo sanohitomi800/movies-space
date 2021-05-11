@@ -1,17 +1,14 @@
-<html>
- <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <title>movies-space</title>
-  </head>
-  <body>
-    <div class="contents">
-      <div class="first-view">
-        <!-- 『トップ画像』を表示する -->
-      </div>
-      <div class="upper-content">
-        <!-- 『新着情報』を表示する -->
-      </div>
+<head>
+  <meta charset="UTF-8">
+  <title>movies-space</title>
+</head>
+<main class="main">
+  <div class="card__weapper">
+<%= render partial: 'prototype', collection: @moves %>
+    <div class="card">
+      <a href="/"></a>
+        <div class="card__body">
+        </div>
     </div>
-  </body>
-</html>
+  </div>
+</main>
