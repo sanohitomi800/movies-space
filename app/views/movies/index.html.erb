@@ -4,11 +4,6 @@
 </head>
 <main class="main">
   <div class="card__weapper">
-<%= render partial: 'prototype', collection: @moves %>
-    <div class="card">
-      <a href="/"></a>
-        <div class="card__body">
-        </div>
-    </div>
+    <%= render partial: 'movies/prototype', collection: @movies, as: :movie %>
   </div>
 </main>
